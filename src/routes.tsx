@@ -5,6 +5,7 @@ import IntroductionComponent from "./components/introduction/introduction.tsx";
 import {ScrollToTop} from "./components/basis/ScrollToTop.tsx";
 import ProjectsComponent from "./components/projects/projects.tsx";
 import TeamComponent from "./components/team/team.tsx";
+import StudiesComponent from "./components/studies/stuides.tsx";
 
 const root = document.getElementById("root");
 if (!root) throw new Error("Root element not found");
@@ -16,6 +17,7 @@ ReactDOM.createRoot(root).render(
             <Route index element={<IntroductionComponent />} />
             <Route path="projects" element={<ProjectsComponent />} />
             <Route path="team" element={<TeamComponent />} />
+            <Route path="studies" element={<StudiesComponent />} />
         </Routes>
     </HashRouter>,
 );
