@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html {
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('/fonts/PixelifySans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('/fonts/PixelifySans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('/fonts/PixelifySans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('/fonts/PixelifySans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+.font-pixel {
+    font-family: 'PixelifySans', sans-serif;
+}
