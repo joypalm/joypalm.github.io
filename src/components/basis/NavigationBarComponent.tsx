@@ -6,7 +6,7 @@ export default function NavigationBar({currentPage}: {currentPage: string}) {
         <div className={"w-full flex flex-col"}>
             <div className={"bg-[#ce6b54] h-32 w-full flex flex-col  pl-12"}>
                 <div className={"flex-1 min-h-0 flex flex-row items-center"}>
-                    <div className={"h-full py-2 [@media(min-height:550px)]:hidden"}>
+                    <div className={"h-full py-2 [@media(min-height:550px)_and_(min-width:768px)]:hidden"}>
                         <img className={"max-w-full max-h-full object-scale-down"} src="/introduction/imgs/big-logo.png" alt=""/>
                     </div>
 
@@ -16,7 +16,7 @@ export default function NavigationBar({currentPage}: {currentPage: string}) {
                 </div>
                 <div className="flex-initial bg-repeat-x bg-[url('/introduction/imgs/head-symbol-line.png')] h-10 w-full"></div>
             </div>
-            <div className="bg-repeat-x bg-[url('/introduction/imgs/head-light-pink.png')] h-24 w-full relative hidden [@media(min-height:550px)]:block">
+            <div className="bg-repeat-x bg-[url('/introduction/imgs/head-light-pink.png')] h-24 w-full relative hidden [@media(min-height:550px)_and_(min-width:768px)]:block">
                 <div className={"absolute bottom-0 h-48 max-w-[50vw] flex items-end"}>
                     <img className={"max-w-full max-h-full object-scale-down"} src="/introduction/imgs/big-logo.png" alt=""/>
                 </div>
