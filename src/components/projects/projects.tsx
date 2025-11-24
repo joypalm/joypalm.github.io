@@ -5,7 +5,7 @@ type Project = {
     title: string;
     description: string;
     link: string;
-    others: [string?];
+    others: string[];
     mainColor: string;
     secondaryColor: string;
     textColor: string;
@@ -26,6 +26,21 @@ function ProjectCard({project}: {project: Project}) {
                     <div className={`font-pixel text-[1.5rem]`}>
                         {project.description}
                     </div>
+                    {
+                        project.others.length > 0 && (
+                            <div className={"w-full my-3 min-w-0 overflow-hidden flex flex-row gap-1 items-center"}>
+                                {
+                                    project.others.map(other => {
+                                        return (
+                                            <div>
+                                                <img src={other} alt={""} className={"w-full object-scale-down"} />
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        )
+                    }
                     <a href={project.link} target={"_blank"} className={`w-full text-end font-bold text-[2rem] font-pixel ${project.textColor}`}>
                         More {">>"}
                     </a>
@@ -46,7 +61,12 @@ const projects: Project[] = [
         title: "Palm “樂然指上“ 長者健腦遊戲",
         description: "這是一款專為提升長者認知與互動體驗設計的遊戲，通過音樂、手勢和語音的結合，提供沉浸式的娛樂與健腦活動，搭配 AI 技術進一步增強使用者體驗。",
         link: "/#/studies",
-        others: [],
+        others: [
+            "/projects/palm/imgs/1.png",
+            "/projects/palm/imgs/2.png",
+            "/projects/palm/imgs/3.png",
+            "/projects/palm/imgs/4.png",
+        ],
         mainColor: "bg-[#eef7f8]",
         secondaryColor: "bg-[#38e0e3]",
         textColor: "text-[#1e868d]",
