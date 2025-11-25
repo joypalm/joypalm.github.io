@@ -8,7 +8,16 @@ export default function StudiesComponent() {
             <p className={"w-full max-w-[1024px] text-center font-bold"}>
                 Dance your fingers to the music
             </p>
-            <img className={"max-w-[1024px] w-full my-10"} src="/studies/imgs/1.png" alt=""/>
+            <img className={"max-w-[1024px] w-full mt-10 mb-5"} src="/studies/imgs/1.png" alt=""/>
+            <div className={"mb-10 flex flex-col gap-2"}>
+                <div className={"w-full text-center text-[1.5rem] font-bold"}>
+                    Demonstration of hand gesture interaction
+                </div>
+                <video controls className={"max-w-[1024px] w-full"}>
+                    <source src="/studies/videos/palm.mp4" type="video/mp4" />
+                </video>
+            </div>
+
             <p className={"w-full max-w-[1024px]"}>
                 Our product is an app that guides the elderly through a series of hand gestures in sync with music and visual cues, aiming to improve their hand dexterity and cognitive control.
             </p>
